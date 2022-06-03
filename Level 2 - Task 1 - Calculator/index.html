@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <input type="text" name="display" id="display_screen" placeholder="Digital Calculator">
+        <div class="buttons">
+            <div class="numbers">
+            <button onclick="display('7')" id="seven" class="number">7</button>
+            <button onclick="display('8')" id="eight" class="number">8</button>
+            <button onclick="display('9')" id="nine" class="number">9</button>
+            <button onclick="display('4')" id="four" class="number">4</button>
+            <button onclick="display('5')" id="five" class="number">5</button>
+            <button onclick="display('6')" id="six" class="number">6</button>
+            <button onclick="display('1')" id="one" class="number">1</button>
+            <button onclick="display('2')" id="two" class="number">2</button>
+            <button onclick="display('3')" id="three" class="number">3</button>
+            <button onclick="updateContent('')" id="clear" class="clear">clr</button>
+            <button onclick="display('0')" id="zero" class="number">0</button>
+            <button onclick="display('.')" id="decimal" class="number">.</button>
+            <button onclick="backspace()" id="delete" class="clear">del</button>
+            <button onclick="display('(')" id="open_bracket" class="number">(</button>
+            <button onclick="display(')')" id="close_bracket" class="number">)</button>
+        </div>
+        <div class="operators">
+            <button onclick="display('/')" id="one" class="operator">/</button>
+            <button onclick="display('*')" id="two" class="operator">*</button>
+            <button onclick="display('+')" id="three" class="operator">+</button>
+            <button onclick="display('-')" id="zero" class="operator">-</button>
+            <button onclick="evaluateResult()" id="equal" class="operator">=</button>
+        </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
